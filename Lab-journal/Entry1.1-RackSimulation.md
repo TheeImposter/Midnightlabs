@@ -10,7 +10,7 @@ I started by exploring the **Seward Branch Office wiring closet**. The rack was 
 
 Here’s what it looked like after I finished setting things up:
 
-> ![Seward Branch Office Wiring Closet](../assets/module1/PTPM-Rack-Simulation.png)
+> ![Seward Branch Office Wiring Closet](../screenshots/Entry1.1Screenshot.png)
 
 This layout forced me to pay attention to where cables go, how ports are labeled, and which devices belong where. It was also the first time I actually dragged a router into a rack and powered it on manually—details that make the simulation feel more grounded.
 
