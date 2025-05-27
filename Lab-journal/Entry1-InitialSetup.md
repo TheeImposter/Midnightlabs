@@ -13,7 +13,7 @@ We spun up our playground in **VirtualBox**, assembling a ragtag crew of virtual
 - 1x Windows 10 Pro (Client1)
 - 1x Kali Linux (for future mischief)
   
-![VirtualBox Kali VM Settings](screenshots/VirtualBox_KaliVM_Settings.png)
+![VirtualBox Kali VM Settings](../screenshots/VirtualBox_KaliVM_Settings.png)
 
 ---
 
@@ -21,15 +21,15 @@ We spun up our playground in **VirtualBox**, assembling a ragtag crew of virtual
 
 After installing the AD DS role, we created our internal domain: `Midnightlab.local`. From there, it was time to stand up the kingdom.
 
-![Server Manager Roles](screenshots/ServerManager_AllRolesEnabled.png)
+![Server Manager Roles](../screenshots/ServerManager_AllRolesEnabled.png)
 
 We carved out our first **Organizational Unit (OU)** for the Human Resources department — the true power behind any operation. Then, with ceremonial flair, we introduced **Mister Midnight**, our first test user.
 
-![Create HR User Mister Midnight](screenshots/ActiveDirectory_HR_User_MisterMidnight.png)
+![Create HR User Mister Midnight](../screenshots/ActiveDirectory_HR_User_MisterMidnight.png)
 
 We attempted automation through a PowerShell script to generate more users. Things were going smoothly... until we tried to recreate an already existing OU. The result?
 
-![PowerShell Script Error](screenshots/PowerShell_AutoUserScriptError.png)
+![PowerShell Script Error](../screenshots/Powershell_AutoUserScriptError.png)
 
 So yeah — lesson learned. AD doesn’t play about namespace conflicts.
 
@@ -39,11 +39,11 @@ So yeah — lesson learned. AD doesn’t play about namespace conflicts.
 
 Next came **DHCP configuration**, because typing IPs manually is a crime against sysadmins.
 
-![DHCP Config Start](screenshots/DHCP_Initial_Config.png)
+![DHCP Config Start](../screenshots/DHCP_Initial_Config.png)
 
 We created a scope in the `172.16.0.0/24` range and made sure everything looked production-grade — minus the C-level execs breathing down our necks.
 
-![DHCP Scope Tree](screenshots/DHCP_Scope_Setup_172.16.0.0.png)
+![DHCP Scope Tree](../screenshots/DHCP_Scope_Setup.png)
 
 ---
 
@@ -51,19 +51,11 @@ We created a scope in the `172.16.0.0/24` range and made sure everything looked 
 
 With services up, we initiated our first domain join. Client1 didn’t fight us.
 
-![Client1 Join Domain](screenshots/Client1_DeviceSpecs_ADJoin.png)
+![Client1 Join Domain](../screenshots/Client1_DeviceSpecs_ADJoin.png)
 
 A quick `ping` to the Domain Controller confirmed that the network gods were pleased.
 
-![CMD Ping Domain](screenshots/CMD_PingDomainController.png)
-
----
-
-## 🕵️ Bonus Capture: Future Recon
-
-We're not full Blue Team yet, but early recon with Wireshark gave us our first glimpse at **ICMP Port Unreachable** traffic — a sign of either misconfiguration or the lab whispering back.
-
-![Wireshark ICMP Port Unreachable](screenshots/Wireshark_ICMP_Port_Unreachable.png)
+![CMD Ping Domain](../screenshots/CMD_PingDomainController.png)
 
 ---
 
@@ -90,5 +82,3 @@ Stay tuned. We’ve got plans to simulate internal phishing, SIEM monitoring, gr
 > 📁 All images should live in your repo under: `/midnightlabs-enterprisesim/screenshots/`
 
 ---
-
-**Next EXP Entry: Taming Group Policy — A Battle Against Wallpaper Tyranny**
