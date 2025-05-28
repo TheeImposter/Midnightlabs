@@ -67,11 +67,11 @@ We began by identifying intermediary devices, end devices, and media types in th
 
 ## 📸 Screenshots
 
-**Logical View of Full Network Topology**
+**Logical View of Full Network Topology Before Edits**
 
 ![Logical Topology Overview](../screenshots/Entry1.2.1Screenshot.png)
 
-**Zoomed-In View of LANs & Cloud Interconnections**
+**Logical View of Full Network Topology After Edits**
 
 ![Detailed Topology View](../screenshots/Entry1.2.2Screenshot.png)
 
