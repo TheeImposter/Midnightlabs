@@ -1,86 +1,96 @@
-# Entry 1.2 – Network Representation & Topology Breakdown
+# Entry 1.2 – Network Representations (Packet Tracer)
 
-This lab focused on visualizing and evaluating a simplified business network using Packet Tracer's Logical mode. The goal was to get familiar with different types of devices, their roles, and how LANs and WANs interact in a broader topology.
-
----
-
-## 🧭 Part 1: Network Components & Media
-
-We began by identifying intermediary devices, end devices, and media types in the topology.
-
-**Questions & Notes:**
-
-- **Intermediary Device Categories:** Routers, switches, access points, modems, cloud devices.
-- **How many endpoint devices?** 15  
-- **How many intermediary devices (excluding clouds)?** 13  
-- **How many end devices aren't desktops?** 9 (including servers, phones, tablets, printers)  
-- **How many types of media used?** 4  
-  - Coaxial (blue)  
-  - Serial DTE (red)  
-  - Copper straight-through (green)  
-  - Wireless (dashed lines)
+This lab introduced a simplified business network using Packet Tracer’s Logical mode. It was designed to help me identify different network components, compare LANs and WANs, and think critically about how topology shapes communication. I explored freely and completed the guided questions.
 
 ---
 
-## 🌐 Part 2: Purpose of Devices
+## Screenshots
 
-- **Client-Server Model:** A network model where clients (PCs, tablets, phones) request resources from centralized servers.
-- **Two Intermediary Functions:**  
-  1. Refresh and resend data (e.g. switches and repeaters)  
-  2. Route data between networks (e.g. routers)
-- **Two Media Criteria:**  
-  1. Network size (SOHO vs enterprise)  
-  2. Speed/performance needs
-
----
-
-## 🔄 Part 3: LAN vs WAN Breakdown
-
-- **LAN:** Local area, limited to small spaces (e.g., the Home Office, Branch, and Central zones)
-- **WAN:** Wide area, spans geographic locations (e.g., the red serial DTE links between clouds)
-- **LAN Count in Diagram:** 3  
-- **WAN Count in Diagram:** 1  
-- **The Internet (as defined):** A massive interconnection of smaller networks (LANs and WANs)
-- **Common Home Connection:** Via router → ISP → Internet (wired or wireless)
-- **Common Business Connection (in our region):** FIOS or DSL
-
----
-
-## 🧪 Challenge Tasks Attempted
-
-**Task 1: Add a New End Device**
-
-- I added a PC to the Home Office LAN.
-- It lacked login credentials, but could still attempt communication through the router.
-- If configured correctly, it would need:
-  - An IP address
-  - Gateway
-  - DNS info
-
-**Task 2: Add an Intermediary Device**
-
-- I added a switch between the router and the new PC.
-- If configured and connected properly, it should function as a transparent bridge, passing traffic.
-- No additional config needed for the switch, unless VLANs or spanning tree are involved.
-
----
-
-## 📸 Screenshots
-
-**Logical View of Full Network Topology Before Edits**
+**Full Logical Topology**
 
 ![Logical Topology Overview](../screenshots/Entry1.2.1Screenshot.png)
 
-**Logical View of Full Network Topology After Edits**
+## Part 1: Identifying Network Components and Media
+
+### **Q: What are the intermediary device categories?**  
+Routers, switches, modems, access points, and cloud interfaces.
+
+### **Q: How many end devices are in the topology (only one connection)?**  
+15
+
+### **Q: How many intermediary devices (multiple connections, not counting clouds)?**  
+13
+
+### **Q: How many end devices are not desktop computers?**  
+9 — including servers, printers, smartphones, tablets, IP phones.
+
+### **Q: How many different types of media are used?**  
+4 types:  
+- Coaxial (blue)  
+- Serial DTE (red)  
+- Copper straight-through (green)  
+- Wireless (dashed)
+
+---
+
+## Part 2: Purpose of Devices
+
+### **Q: What is the client-server model?**  
+A network architecture where clients (like PCs or phones) request services from a centralized server.
+
+### **Q: List two functions of intermediary devices.**  
+1. Refresh/resend signals (e.g., repeater, switch)  
+2. Route traffic between networks (e.g., router)
+
+### **Q: List two criteria for choosing a media type.**  
+1. Network size (e.g., SOHO vs enterprise)  
+2. Required upload/download speed
+
+---
+
+## Part 3: LANs vs WANs
+
+### **Q: What’s the difference between a LAN and a WAN?**  
+A LAN (Local Area Network) connects nearby devices—like a home or office.  
+A WAN (Wide Area Network) connects LANs across regions, states, or even countries.  
+Example: Microsoft offices connected across states = WAN.
+
+### **Q: How many WANs in the topology?**  
+1
+
+### **Q: How many LANs?**  
+3 (Home Office, Central, and Branch)
+
+### **Q: How would you describe the internet?**  
+A global collection of interconnected networks.
+
+### **Q: How do home users typically connect to the internet?**  
+Via wired or wireless router > ISP > internet backbone.
+
+### **Q: How do businesses in your area connect?**  
+Most use FIOS or DSL connections.
+
+---
+
+## Challenge Tasks
+
+### **Task 1: Add an End Device**  
+I added a PC to the Home Office LAN. It was limited by missing login credentials, but I confirmed it had a path to send and receive traffic via the router.  
+If fully configured, it would need an IP address, gateway, and DNS server info.
+
+### **Task 2: Add an Intermediary Device**  
+I added a switch between the router and the new PC. It’s redundant in this context, but worked as a test of placement and cabling.  
+If properly connected, the switch should allow the PC to communicate with the rest of the LAN.
+
+---
+**Full Network Topology After Edits**
 
 ![Detailed Topology View](../screenshots/Entry1.2.2Screenshot.png)
 
 ---
 
-## 🧠 Reflection
+## Reflection
 
-This activity reinforced my ability to "read" a network visually—seeing not just what devices are used, but how they interact. Thinking in terms of LANs and WANs made me realize that networks are about **scope** and **relationship**, not just cables. I also appreciated the challenge section—it forced me to interact with the network creatively, even when locked out of full configuration.
-
-As always, it’s about staying hands-on. The more I click, drag, trace, and build, the better this all starts to feel.
+This lab helped me sharpen my ability to visually interpret a network. I understand now that topology isn't just about how devices look on a diagram—it's about their roles, relationships, and reach. I also appreciated the challenge prompts, which encouraged me to think creatively, test limits, and approach the network like a living system.
 
 ---
