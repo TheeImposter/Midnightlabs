@@ -39,7 +39,7 @@ We document every step—mistakes, insights, victories—so others can learn or 
 
 📺 [YouTube Channel](#)  
 🔗 [LinkedIn Profile](https://www.linkedin.com/in/david-dunbar-605a70242)  
-🧠 [Manifesto](./MANIFESTO.md)
+🧠 [Manifesto](./Manifesto.md)
 
 ---
 
